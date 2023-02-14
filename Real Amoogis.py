@@ -4,7 +4,7 @@ from turtle import *
  
 #The Arrow 
 t=turtle.Turtle() 
-t.speed(50) 
+t.speed(0) 
  
 #The Conditional
 usr=input('Type Dragon: ').lower()
@@ -1522,12 +1522,14 @@ if usr=='dragon':
  #Insert Part Name 5
        p=turtle.Turtle()
        t=p
+       t.fillcolor('#C50000') 
+       t.speed(50)
        t.up()
-       t.begin_fill() 
        t.setpos(-372.62,55.34) 
        t.setpos(-358.13,51.46) 
        t.up() 
-       t.down() 
+       t.down()
+       t.begin_fill() 
        t.setpos(-372.62,55.34) 
        t.right(15) 
        t.setpos(-385.61,62.84) 
@@ -1702,8 +1704,6 @@ if usr=='dragon':
        t.setpos(-417.89,50.57) 
        t.setpos(-432.89,50.57) 
        t.setpos(-447.89,50.57)
-       break
-      while True:
-            t.setpos(-432.89,50.57) 
-            t.setpos(0,0)
+
+
 turtle.mainloop()
