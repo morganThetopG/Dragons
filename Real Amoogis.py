@@ -1522,6 +1522,7 @@ if usr=='dragon':
  #Insert Part Name 5
        p=turtle.Turtle()
        t=p
+       t.up()
        t.begin_fill() 
        t.setpos(-372.62,55.34) 
        t.setpos(-358.13,51.46) 
@@ -1656,7 +1657,6 @@ if usr=='dragon':
        t.left(15) 
        t.left(15) 
        t.left(15) 
-       t.begin_fill() 
        t.setpos(-373.10,53.73) 
        t.left(15) 
        t.left(15) 
@@ -1681,7 +1681,6 @@ if usr=='dragon':
        t.setpos(-379.10,29.36) 
        t.setpos(-368.50,39.97) 
        t.setpos(-357.89,50.57) 
-       t.end_fill() 
        t.up() 
        t.left(15) 
        t.left(15) 
@@ -1705,6 +1704,6 @@ if usr=='dragon':
        t.setpos(-447.89,50.57)
        break
       while True:
-            t.ht()
-            t.st()
+            t.setpos(-432.89,50.57) 
+            t.setpos(0,0)
 turtle.mainloop()
